@@ -5,3 +5,4 @@ export default function App() {
     <div><h1 className='text-red-500'>App</h1></div>
   )
 }
+//git commit -m "instrall react js and tailwind css and create the first template"
