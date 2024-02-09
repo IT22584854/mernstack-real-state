@@ -1,8 +1,19 @@
-import React from 'react'
+import{BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './pages/Home'
+import SignIn from './pages/SignIn'
+import SignOut from './pages/SignOut'
+import Profile from './pages/profile'
+import About from './pages/about'
 
 export default function App() {
-  return (
-    <div><h1 className='text-red-500'>App</h1></div>
-  )
+  return <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/sign-in" element={<SignIn />} />
+    <Route path="/sign-out" element={<SignOut />} />
+    <Route path="/profile" element={<Profile />} />
+    <Route path="/about" element={<About />} />
+  </Routes>
+  </BrowserRouter>
+  
 }
-//git commit -m "instrall react js and tailwind css and create the first template"
